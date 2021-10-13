@@ -7,6 +7,7 @@ using Day5_BasicCorePrograms.Leap_year;
 using Day5_BasicCorePrograms.Power_of_2;
 using Day5_BasicCorePrograms.Swap_2_nos;
 using Day5_BasicCorePrograms.Vowel_or_Consonent;
+using Day5_BasicCorePrograms.Prime_factorisation;
 using System;
 
 namespace Day5_BasicCorePrograms
@@ -104,8 +105,15 @@ namespace Day5_BasicCorePrograms
                     Console.WriteLine(myobj9.CheckVowel(argument4));
                     break;
 
+                case 10:
+                    Console.WriteLine("You have selected the Prime Factorisation program. Please enter your number");
+                    PrimeFact myobj10 = new PrimeFact();
+                    argument = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(myobj10.Factorise(argument));
+                    break;
 
-   
+
+
             }
 
         }
